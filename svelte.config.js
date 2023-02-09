@@ -9,6 +9,17 @@ const config = {
 
 	kit: {
 		adapter: adapter()
+		// vite: {
+		// 	resolve: {
+		// 		alias: {
+		// 			// $components: './src/components',
+		// 			$lib: './src/lib',
+		// 			// $stores: './src/stores',
+		// 			$routes: './src/routes'
+		// 			// $utils: './src/utils',
+		// 		}
+		// 	}
+		// }
 	}
 };
 

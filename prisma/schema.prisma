@@ -11,16 +11,17 @@ datasource db {
 }
 
 model User {
-  id        String @id @default(uuid())
-  email     String @unique
+  id        String  @id @default(uuid())
+  name      String?
+  email     String  @unique
   password  String
-  authToken String @unique
+  authToken String  @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   role   Role @relation(fields: [roleId], references: [id])
-  roleId Int
+  roleId Int  @default(1)
 }
 
 model Role {
